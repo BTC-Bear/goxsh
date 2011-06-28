@@ -127,7 +127,7 @@ class GoxSh(object):
         self.__btc_precision = Decimal("0.00000001")
         self.__usd_precision = Decimal("0.00001")
         self.__usd_re = re.compile(r"^\$(\d*\.?\d+)$")
-        self.__mtgox_commission = Decimal("0.0065")
+        self.__mtgox_commission = Decimal("0.003")
         collapse_escapes = partial(re.compile(r"\\(.)", re.UNICODE).sub, "\\g<1>")
         self.__token_types = (
             ( # naked (unquoted)
